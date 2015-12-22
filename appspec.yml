@@ -4,9 +4,6 @@ files:
  - source: /
    destination: /var/www/html
 
-# 1) For all of the files in the /tmp/my-app folder ending in -3.txt
-#  (for example, just my-file-3.txt), owner = adm, group = wheel, and
-#  mode = 464 (-r--rw-r--).
 permissions:
   - object: /var/www/html
     owner: apache
@@ -14,18 +11,17 @@ permissions:
     mode: 755
     type:
       - file
-      - directory
-  - object: /var/www/html/storage
-    owner: apache
-    group: apache
-    mode: 777
-    type:
-      - file
-      - directory
-  - object: /var/www/html/bootstrap/cache
-    owner: apache
-    group: apache
-    mode: 777
-    type:
-      - file
-      - directory
+  # - object: /var/www/html/storage
+  #   owner: apache
+  #   group: apache
+  #   mode: 777
+  #   type:
+  #     - file
+  #     - directory
+  # - object: /var/www/html/bootstrap/cache
+  #   owner: apache
+  #   group: apache
+  #   mode: 777
+  #   type:
+  #     - file
+  #     - directory
