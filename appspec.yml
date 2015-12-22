@@ -16,7 +16,7 @@ permissions:
     group: apache
     mode: 777
     type:
-      - directory
+      - file
   # - object: /var/www/html/bootstrap/cache
   #   owner: apache
   #   group: apache
