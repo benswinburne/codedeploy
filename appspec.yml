@@ -5,18 +5,18 @@ files:
    destination: /var/www/html
 
 permissions:
-  - object: /var/www/html
-    owner: apache
-    group: apache
-    mode: 755
-    type:
-      - directory
-  # - object: /var/www/html/storage
+  # - object: /var/www/html
   #   owner: apache
   #   group: apache
-  #   mode: 777
+  #   mode: 755
   #   type:
-  #     - directory
+  #     - file
+  - object: /var/www/html/storage
+    owner: apache
+    group: apache
+    mode: 777
+    type:
+      - directory
   # - object: /var/www/html/bootstrap/cache
   #   owner: apache
   #   group: apache
