@@ -8,23 +8,15 @@ permissions:
   - object: /var/www/html
     owner: apache
     group: apache
-    mode: 755
-    except:
-      - storage
-      - storage/app
-      - storage/logs
-      - storage/framework
-      - storage/framework/views
-      - storage/framework/cache
-      - storage/framework/sessions
-    type:
-      - directory
-  - object: /var/www/html/storage
-    owner: apache
-    group: apache
     mode: 777
     type:
       - directory
+  # - object: /var/www/html/storage
+  #   owner: apache
+  #   group: apache
+  #   mode: 777
+  #   type:
+  #     - directory
   # - object: /var/www/html/bootstrap/cache
   #   owner: apache
   #   group: apache
