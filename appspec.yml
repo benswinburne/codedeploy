@@ -10,7 +10,7 @@ permissions:
     group: apache
     mode: 755
     except:
-      - storage/*
+      - storage
     type:
       - directory
   - object: /var/www/html/storage
