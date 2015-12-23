@@ -11,6 +11,12 @@ permissions:
     mode: 755
     except:
       - storage
+      - storage/app
+      - storage/logs
+      - storage/framework
+      - storage/framework/views
+      - storage/framework/cache
+      - storage/framework/sessions
     type:
       - directory
   - object: /var/www/html/storage
