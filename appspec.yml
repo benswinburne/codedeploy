@@ -9,7 +9,8 @@ permissions:
     owner: apache
     group: apache
     mode: 755
-    except: [/var/www/html/storage/*]
+    except:
+      - storage/*
     type:
       - directory
   - object: /var/www/html/storage
