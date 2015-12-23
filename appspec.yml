@@ -10,7 +10,7 @@ permissions:
     group: apache
     mode: 755
     type:
-      - file
+      - directory
   - object: /var/www/html/storage
     owner: apache
     group: apache
